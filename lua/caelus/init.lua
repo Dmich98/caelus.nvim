@@ -1,3 +1,8 @@
+-- Caelus.nvim
+-- Based on Caelus by dacctal.
+-- Modified by Dmich98, 2026.
+-- SPDX-License-Identifier: GPL-3.0-only
+
 local M = {}
 
 local modules = {
