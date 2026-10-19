@@ -20,7 +20,6 @@ function M.colorscheme()
   for _, name in ipairs(modules) do
     local module = "caelus." .. name
 
-    -- Reevaluate highlights when reloading the theme.
     package.loaded[module] = nil
 
     local groups = require(module)
@@ -28,12 +27,6 @@ function M.colorscheme()
     for group, opts in pairs(groups) do
       set(0, group, opts)
     end
-  end
-
-  if package.loaded["lualine"] then
-    require("lualine").setup({
-      options = { theme = "auto" },
-    })
   end
 end
 
