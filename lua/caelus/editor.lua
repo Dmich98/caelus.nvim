@@ -21,8 +21,15 @@ return {
   Folded       = { fg = p.gray8, bg = p.gray3 },
 
   -- Popup
-  Pmenu        = { fg = p.fg, bg = p.gray10 },
+  Pmenu        = { fg = p.fg, bg = p.gray1 },
   PmenuSel     = { fg = p.bg, bg = p.orange },
-  PmenuSbar    = { bg = p.gray10 },
+  PmenuKind    = { fg = p.cyan, bg = p.gray1 },
+  PmenuKindSel = { fg = p.bg, bg = p.orange },
+  PmenuExtra   = { fg = p.gray8, bg = p.gray1 },
+  PmenuExtraSel = { fg = p.bg, bg = p.orange },
+  PmenuMatch   = { fg = p.orange, bold = true },
+  PmenuMatchSel = { fg = p.bg, bg = p.orange, bold = true },
+  PmenuBorder  = { fg = p.gray6, bg = p.gray1 },
+  PmenuSbar    = { bg = p.gray1 },
   PmenuThumb   = { bg = p.orange },
 }
